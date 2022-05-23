@@ -44,3 +44,36 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# Api Consume
+
+*  https://dev.pokemontcg.io/
+* https://gorest.co.in/
+* https://www.metaweather.com/api/
+* https://www.thecocktaildb.com/
+* https://rickandmortyapi.com/documentation
+* https://db.ygoprodeck.com/api-guide/
+* https://dash.valorant-api.com/endpoints/agents
+* https://www.freetogame.com/api-doc
+* https://documenter.getpostman.com/view/14059948/TzecB4fH#5d82e651-26d7-4c58-8b9a-f021f5cc1dfd
+* https://ghibliapi.herokuapp.com/#tag/Films%2Fpaths%2F~1films%2Fget
+* https://ffxivcollect.com/
+* https://www.theaudiodb.com/api_guide.php
+* https://github.com/cyberboysumanjay/GaanaAPI
+* https://developer.spotify.com/documentation/web-api/
+* https://www.lyrics.com/lyric/39358674/SiM/The+Rumbling+%5BTV+Size%5D
+
+
+---
+## Api Consume 
+1. https://valorant-api.com/v1/agents
+
+```typescript
+
+interface DataResult {
+    status:number
+    data:Array<Agents>
+}
+
+```

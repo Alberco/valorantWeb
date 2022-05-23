@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Permanent Marker', cursive,
+    sans-serif,'Staatliches', cursive,'Pathway Gothic One', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+}
+
+form input{ 
+  border:1px solid #ccc;
+  border-radius: 2px;
+  padding: 4px 10px;
+  margin:0 4px;
+}
+.container{
+  padding: 20px 400px;
+}
+.fondo {
+  background-image: url("./animation/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
