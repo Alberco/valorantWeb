@@ -13,6 +13,15 @@ export const BoxHome = styled.div`
     height: 48rem; 
     color: white;
     columns: 2;
+    margin-top: 93px;
+    @media (max-width: 1600px){
+        
+    }
+    @media (max-width: 400px){
+        margin: 100px 1rem 20px 1rem;
+        flex-direction: column;
+        gap: 50px;
+    }
 `
 export const HomeTitle = styled.p`
     padding : 2px 30px;
@@ -21,6 +30,12 @@ export const HomeTitle = styled.p`
     font-family :'Staatliches', cursive;
     font-weight : bold;
     color: #fff;
+    @media (max-width: 1600px){
+        
+    }
+    @media (max-width: 400px){
+        font-size: 2rem;
+    }
 `
 
 export const Box = styled.div`
@@ -29,6 +44,12 @@ export const Box = styled.div`
 `
 export const ImgAgen = styled.img`
     height: 90vh;
+    @media (max-width: 1600px){
+        
+    }
+    @media (max-width: 400px){
+        height: 300px;
+    }
 `
 export const BottomD = styled.button`
     background:#A41D0E;

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+
 const LinkDiv = styled(Link)`
     border: solid 1px transparent;
     text-decoration : none;

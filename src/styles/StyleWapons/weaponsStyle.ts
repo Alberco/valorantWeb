@@ -16,10 +16,29 @@ export const CardWeapons = styled.div`
         transform: scale(1.05);
 
     }
+    @media (max-width: 1600px){
+        
+    }
+    @media (max-width: 400px){
+        width: 320px;
+        height: 400px;
+        margin:5px;
+        padding: 1px;
+        align-items : center;
+        justify-content: center;
+    }
 `
 export const ImgWeapons = styled.img`
     width: auto;
     height: 8rem;
+    @media (max-width: 1600px){
+        width:300px;
+        height:100px;
+}
+  @media (max-width: 400px){
+
+  }
+    
 
 `
 export const Price = styled.p`

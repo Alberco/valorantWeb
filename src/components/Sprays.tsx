@@ -12,7 +12,7 @@ const BoxSpray = styled.div`
     align-content: center;
     border: 1px solid #CACAD6;
     border-radius: 10px;
-    margin:0px 100px;
+    margin:100px 100px;
     text-align: center;
     color : white;
     font-family :'Staatliches', cursive;
@@ -22,7 +22,14 @@ const BoxSpray = styled.div`
     @media (max-width: 1600px){
         padding: 0px 4rem;
         gap: 1rem;
-  }
+    }
+    @media (max-width: 400px){
+        padding: 30px 2rem;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 100px 10px 10px 10px;
+        border-radius: 30px;
+     }
 `
 
 

@@ -5,6 +5,28 @@ import { IconImg , LogoMain }from "../styles/IconImg";
 import Description from "../styles/Description";
 import LinkDiv from "../styles/LinkDiv";
 import pathLink from "../tools/archiveUrl";
+import styled from 'styled-components'
+
+const Titulos = styled(Description)`
+    @media (max-width: 400px){
+        display: none;
+  }
+`
+const TituloReserva = styled(Description)`
+
+    @media (max-width: 1980px){
+        display: none;
+    }
+
+    @media (max-width: 1600px){
+        display: none;
+    }
+
+    @media (max-width: 400px){
+        display: block;
+        font-size: 1.2rem;
+    }
+`
 
 function NavbarMain() {
 
@@ -12,20 +34,27 @@ function NavbarMain() {
         <Navbar>
             <ListLink>
                 <LogoMain><IconImg src={icon} alt="" /></LogoMain>
-                <span><Description>Valorant</Description></span>
+                <span><Titulos>Valorant</Titulos></span>
             </ListLink>
             <ListLink>
                 {
                     pathLink.map( (item,index) => (
                     <LinkDiv key={index} to={item.url}>
-                        <Description>{item.title}</Description>
+                        <TituloReserva>{item.title}</TituloReserva>
+                    </LinkDiv>
+                    ))
+                }
+                {
+                    pathLink.map( (item,index) => (
+                    <LinkDiv key={index} to={item.url}>
+                        <Titulos>{item.title}</Titulos>
                     </LinkDiv>
                     ))
                 }
             </ListLink>
             <ListLink>
-                <div><Description>Donation</Description></div>
-                <div><Description>Github</Description></div>
+                <div><Titulos>Donation</Titulos></div>
+                <div><Titulos>Github</Titulos></div>
             </ListLink>
         </Navbar>
     );

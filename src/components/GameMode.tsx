@@ -15,16 +15,25 @@ const BoxTier = styled.div`
     grid-template-columns: repeat(6,1fr);
     border: solid 2px white;
     border-radius: 40px;
-    margin: auto 100px;
+    margin: 100px 100px 20px 100px;
     align-content: center;
     text-align: center;
     padding: 100px 10px;
     background:#0C0C17;
     font-family :'Staatliches', cursive;
     font-size: 1.4rem;
+    @media (max-width: 1600px){
+        
+    }
+    @media (max-width: 400px){
+        grid-template-columns: repeat(2,1fr);
+        width: 320px;
+        padding: 30px 10px;
+        margin: 100px 10px 30px 10px;
+    }
 `
 const Fondo = styled(FondoWeb)`
-    height : auto;
+    height : 100%;
 `
 
 function GameMode() {

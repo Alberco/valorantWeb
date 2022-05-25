@@ -8,6 +8,7 @@ const Description = styled.p`
     color : #EFEFEF;
     font-family :'Pathway Gothic One', sans-serif;
     font-size : 1.7rem;
+
 `
 
 export default Description;

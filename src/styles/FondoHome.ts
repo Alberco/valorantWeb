@@ -9,6 +9,7 @@ const FondoHome = styled.div`
   background-attachment: fixed;
   background-position: center;
   padding-bottom: 4rem;
+  
 `
 
 export default FondoHome;
